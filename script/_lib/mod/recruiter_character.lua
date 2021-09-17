@@ -490,7 +490,24 @@ function recruiter_character.get_quantity_limit_for_group(self, groupID)
     --for now, this just returns where the default value is stored in the model for all characters.
     --in the future, this will allow me to insert code here to add or subtract capacity based on the character's subtype, traits, skills or effects.
     --TODO Character cap increases or penalties
-    return self:manager():get_base_quantity_limit_for_group(groupID)
+    --NB: Following code adapted from mod by Zerackiel59 - https://steamcommunity.com/sharedfiles/filedetails/?id=2246640814&searchtext=caps
+    if string.find(groupID, "core") then
+        return 999
+    else
+        local groupLimit = 999 -- default dumb value
+        local lordChar = self:get_character()
+        local lordLevel = lordChar:rank()
+        local levelModifier = (lordLevel - (lordLevel % 5))/5
+        if string.find(groupID, "special") then
+            groupLimit = 2 + levelModifier*2
+        elseif string.find(groupID, "rare") then
+            groupLimit = 1 + levelModifier
+        else
+            self:log("ERROR : unhandled group "..groupID)
+            return 999
+        end
+        return groupLimit
+    end
 end
 
 -------------------------------------
