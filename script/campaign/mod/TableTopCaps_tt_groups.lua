@@ -1025,10 +1025,10 @@ rm:add_post_setup_callback(function()
     rm:log("Added Skrolk Special Rule")
 
     for i = 1, #lordsSpecialRules do
-        local ruleName = lordsSpecialRules[i][0].."-"..lordsSpecialRules[i][1]
-        rm:create_unit_override(lordsSpecialRules[i][1], ruleName, lordsSpecialRules[i][2], lordsSpecialRules[i][3])
-        rm:add_subtype_filter_for_unit_override(lordsSpecialRules[i][0], ruleName)
-        rm:set_ui_profile_for_unit_override(ruleName, lordsSpecialRules[i][4])
+        local ruleName = lordsSpecialRules[i][1].."-"..lordsSpecialRules[i][2]
+        rm:create_unit_override(lordsSpecialRules[i][2], ruleName, lordsSpecialRules[i][3], lordsSpecialRules[i][4])
+        rm:add_subtype_filter_for_unit_override(lordsSpecialRules[i][1], ruleName)
+        rm:set_ui_profile_for_unit_override(ruleName, lordsSpecialRules[i][5])
         rm:log("Added Special Rule "..ruleName)
     end
 
