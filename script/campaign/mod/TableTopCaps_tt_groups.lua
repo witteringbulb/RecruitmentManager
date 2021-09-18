@@ -1,7 +1,6 @@
 local rm = core:get_static_object("recruitment_manager") 
 --# assume rm: RECRUITER_MANAGER
 
-
 local units = {
 
     
@@ -803,9 +802,9 @@ local units = {
     {"wh2_main_def_inf_witch_elves_0", "def_core"},
     {"wh2_main_def_cav_dark_riders_0", "def_core"},
     {"wh2_main_def_cav_dark_riders_1", "def_core"},
+    {"wh2_main_def_inf_harpies", "def_core"},
     {"wh_twa03_def_inf_squig_explosive_0", "def_core"}, --RAKARTH UNIQUE
     --SPECIAL
-    {"wh2_main_def_inf_harpies", "def_special", 1},
     {"wh2_main_def_inf_shades_0", "def_special", 1},
     {"wh2_main_def_inf_shades_1", "def_special", 2},
     {"wh2_main_def_inf_shades_2", "def_special", 2},
@@ -965,7 +964,27 @@ local units = {
     {"wh2_twa05_ogr_inf_ogres_0", "emp_special", 1},
     {"wh2_twa05_ogr_inf_ogres_1", "emp_special", 1}
     
-} --:vector<{string, string, number?}> 
+} --:vector<{string, string, number?}>
+
+local lordsSpecialRules = {
+
+    {"wh2_main_def_dreadlord", "wh2_dlc14_def_cav_scourgerunner_chariot_0", "def_special", 1, "The Dreadlord (sword and crossbow) gets scourgerunner chariots discounted"},
+    {"wh2_main_def_dreadlord_fem","wh2_main_def_cav_cold_one_chariot", "def_special", 1, "The Dreadlord (sword and shield) gets cold one chariots discounted"},
+    {"wh2_dlc14_def_high_beastmaster", "wh2_main_def_mon_war_hydra", "def_special", 2, "The High Beastmaster gets Hydras as special"},
+    {"wh2_dlc10_def_supreme_sorceress_beasts","wh2_dlc10_def_mon_feral_manticore_0", "def_special", 1, "The Supreme Sorceress of Beasts gets manticores as special"},
+    {"wh2_dlc10_def_supreme_sorceress_dark", "wh2_dlc10_def_cav_doomfire_warlocks_0", "def_special", 1, "The Supreme Sorceress of Dark gets Doomfire Warlocks discounted"},
+    {"wh2_dlc10_def_supreme_sorceress_death", "wh2_main_def_inf_har_ganeth_executioners_0", "def_special", 1, "The Supreme Sorceress of Death gets Har Ganeth Excecutioners discounted"},
+    {"wh2_dlc10_def_supreme_sorceress_fire","wh2_main_def_mon_war_hydra", "def_rare", 1, "The Supreme Sorceress of Fire gets Hydras discounted"},
+    {"wh2_dlc10_def_supreme_sorceress_shadow", "wh2_main_def_inf_shades_1", "def_special", 1, "The Supreme Sorceress of Shadow gets discounted Shades"},
+    {"wh2_dlc10_def_supreme_sorceress_shadow", "wh2_main_def_inf_shades_2", "def_special", 1, "The Supreme Sorceress of Shadow gets discounted Shades"},
+    {"wh2_dlc10_def_crone_hellebron", "wh2_main_def_inf_har_ganeth_executioners_0", "def_special", 1, "Crone Hellebron gets Har Ganeth Excecutioners discounted"},
+    {"wh2_dlc14_def_malus_darkblade", "wh2_main_def_cav_cold_one_knights_1", "def_special", 1, "Malus gets discounted Dread Knights"},
+    {"wh2_main_def_malekith", "wh2_main_def_inf_black_guard_0", "def_special", 1, "Malekith gets discounted Black Guard"},
+    {"wh2_main_def_morathi", "wh2_dlc10_def_inf_sisters_of_slaughter", "def_special", 1, "Morathi gets discounted Sisters of Slaughter"},
+    {"wh2_main_def_morathi", "wh2_main_def_mon_war_hydra", "def_rare", 1, "Morathi gets Hydras discounted"},
+    {"wh2_twa03_def_rakarth", "wh2_main_def_mon_war_hydra", "def_special", 2, "Rakarth gets Hydras as special"},
+    {"wh2_dlc11_def_lokhir", "wh2_dlc10_def_mon_kharibdyss_0", "def_special", 2, "Lokhir gets Kharibdyss as special"}
+}
 
 local unit_text_overrides = {
     ["wh2_main_lzd_mon_kroxigors_nakai"]  = {
@@ -1004,6 +1023,15 @@ rm:add_post_setup_callback(function()
     rm:add_subtype_filter_for_unit_override("wh2_main_skv_lord_skrolk", "core_plague_monks")
     rm:set_ui_profile_for_unit_override("core_plague_monks", "[[col:yellow]]Special Rule: [[/col]] Lord Skrolk can recruit Plague Monks as Core units in his armies. \n Armies may have an unlimited number of Core Units.", "ui/custom/recruitment_controls/common_units.png")
     rm:log("Added Skrolk Special Rule")
+
+    for i = 1, #lordsSpecialRules do
+        local ruleName = lordsSpecialRules[i][0].."-"..lordsSpecialRules[i][1]
+        rm:create_unit_override(lordsSpecialRules[i][1], ruleName, lordsSpecialRules[i][2], lordsSpecialRules[i][3])
+        rm:add_subtype_filter_for_unit_override(lordsSpecialRules[i][0], ruleName)
+        rm:set_ui_profile_for_unit_override(ruleName, lordsSpecialRules[i][4])
+        rm:log("Added Special Rule "..ruleName)
+    end
+
     --this sets up the AI
     local subculture_defaults = {
         ["wh_main_sc_emp_empire"] = {"wh_dlc04_emp_inf_free_company_militia_0", "wh_main_emp_cav_empire_knights", "wh_main_emp_inf_halberdiers", "wh_main_emp_inf_handgunners", "wh_main_emp_inf_spearmen_1", "wh_main_emp_inf_swordsmen", "wh2_dlc13_emp_inf_archers_0", "wh_main_emp_inf_crossbowmen"},
