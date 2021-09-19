@@ -1036,12 +1036,12 @@ rm:add_post_setup_callback(function()
     for i = 1, #dElfSpecialRulesArray do
         local lordName = dElfSpecialRulesArray[i][1]
         for j = 1, #dElfSpecialRulesArray[i][2] do
-            local unitType = dElfSpecialRulesArray[i][j]
+            local unitType = dElfSpecialRulesArray[i][2][j]
             local unitWeight = 2
-            if dElf1PointRareUnits[unitType] then unitWeight = 1 end
-            if dElf3PointRareUnits[unitType] then unitWeight = 3 end
+            if dElf1PointRareUnits[unitType] == 1 then unitWeight = 1 end
+            if dElf3PointRareUnits[unitType] == 3 then unitWeight = 3 end
             local ruleName = lordName.."-"..unitType
-            rm:create_unit_override(unitType, ruleName, def_special, unitWeight)
+            rm:create_unit_override(unitType, ruleName, "def_special", unitWeight)
             rm:add_subtype_filter_for_unit_override(lordName, ruleName)
             rm:log("Added Special Rule "..ruleName)
         end
