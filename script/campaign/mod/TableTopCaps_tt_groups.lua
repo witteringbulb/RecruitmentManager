@@ -804,27 +804,26 @@ local units = {
     {"wh2_main_def_cav_dark_riders_1", "def_core"},
     {"wh2_main_def_inf_harpies", "def_core"},
     {"wh_twa03_def_inf_squig_explosive_0", "def_core"}, --RAKARTH UNIQUE
-    --SPECIAL
-    {"wh2_main_def_inf_shades_0", "def_special", 1},
-    {"wh2_main_def_inf_shades_1", "def_special", 2},
-    {"wh2_main_def_inf_shades_2", "def_special", 2},
-    {"wh2_main_def_inf_black_guard_0", "def_special", 2},
-    {"wh2_main_def_cav_cold_one_knights_0", "def_special", 1},
-    {"wh2_main_def_cav_cold_one_knights_1", "def_special", 2},
-    {"wh2_main_def_inf_har_ganeth_executioners_0", "def_special", 2},
-    {"wh2_dlc10_def_inf_sisters_of_slaughter", "def_special", 2},
-    {"wh2_main_def_cav_cold_one_chariot", "def_special", 2},
-    {"wh2_dlc10_def_cav_doomfire_warlocks_0", "def_special", 2},
-    {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "def_special", 2},
-    {"wh2_main_def_art_reaper_bolt_thrower", "def_special", 2},
-    {"wh2_twa03_def_mon_wolves_0", "def_special", 1}, --RAKARTH UNIQUE
     --RARE
-    {"wh2_dlc10_def_mon_feral_manticore_0", "def_rare", 1},
-    {"wh2_main_def_mon_black_dragon", "def_rare", 3},
+    {"wh2_main_def_inf_shades_0", "def_rare", 1},
+    {"wh2_twa03_def_mon_wolves_0", "def_rare", 1}, --RAKARTH UNIQUE
+    {"wh2_main_def_cav_cold_one_knights_0", "def_rare", 2},
+    {"wh2_dlc14_def_mon_bloodwrack_medusa_0", "def_rare", 2},
+    {"wh2_dlc10_def_mon_feral_manticore_0", "def_rare", 2},
+    {"wh2_main_def_inf_shades_1", "def_rare", 2},
+    {"wh2_main_def_inf_shades_2", "def_rare", 2},
+    {"wh2_main_def_inf_black_guard_0", "def_rare", 2},
+    {"wh2_main_def_cav_cold_one_knights_1", "def_rare", 2},
+    {"wh2_main_def_inf_har_ganeth_executioners_0", "def_rare", 2},
+    {"wh2_dlc10_def_inf_sisters_of_slaughter", "def_rare", 2},
+    {"wh2_main_def_cav_cold_one_chariot", "def_rare", 2},
+    {"wh2_dlc10_def_cav_doomfire_warlocks_0", "def_rare", 2},
+    {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "def_rare", 2},
+    {"wh2_main_def_art_reaper_bolt_thrower", "def_rare", 2},
     {"wh2_main_def_mon_war_hydra", "def_rare", 2},
     {"wh2_dlc10_def_mon_kharibdyss_0", "def_rare", 2},
-    {"wh2_dlc14_def_mon_bloodwrack_medusa_0", "def_rare", 1},
     {"wh2_dlc14_def_veh_bloodwrack_shrine_0", "def_rare", 2},
+    {"wh2_main_def_mon_black_dragon", "def_rare", 3},
     {"wh2_twa03_def_mon_war_mammoth_0", "def_rare", 2}, --RAKARTH UNIQUE
     
     -------ROR-------
@@ -835,13 +834,13 @@ local units = {
     {"wh2_dlc10_def_cav_raven_heralds_ror_0", "def_core"},
     {"wh2_dlc14_def_inf_harpies_ror_0", "def_core"},
     --SPECIAL
-    {"wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0", "def_special", 2},
-    {"wh2_dlc10_def_cav_slaanesh_harvesters_ror_0", "def_special", 2},
-    {"wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0", "def_special", 2},
-    {"wh2_dlc14_def_cav_scourgerunner_chariot_ror_0", "def_special", 2},
+    {"wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0", "def_rare", 2},
+    {"wh2_dlc10_def_cav_slaanesh_harvesters_ror_0", "def_rare", 2},
+    {"wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0", "def_rare", 2},
+    {"wh2_dlc14_def_cav_scourgerunner_chariot_ror_0", "def_rare", 2},
     --RARE
     {"wh2_dlc10_def_mon_chill_of_sontar_ror_0", "def_rare", 2},
-    {"wh2_dlc14_def_mon_bloodwrack_medusa_ror_0", "def_rare", 1},
+    {"wh2_dlc14_def_mon_bloodwrack_medusa_ror_0", "def_rare", 2},
 
     
     ---------------------------------------------------------------
@@ -966,25 +965,35 @@ local units = {
     
 } --:vector<{string, string, number?}>
 
-local lordsSpecialRules = {
-
-    {"wh2_main_def_dreadlord", "wh2_dlc14_def_cav_scourgerunner_chariot_0", "def_special", 1, "The Dreadlord (sword and crossbow) gets scourgerunner chariots discounted"},
-    {"wh2_main_def_dreadlord_fem","wh2_main_def_cav_cold_one_chariot", "def_special", 1, "The Dreadlord (sword and shield) gets cold one chariots discounted"},
-    {"wh2_dlc14_def_high_beastmaster", "wh2_main_def_mon_war_hydra", "def_special", 2, "The High Beastmaster gets Hydras as special"},
-    {"wh2_dlc10_def_supreme_sorceress_beasts","wh2_dlc10_def_mon_feral_manticore_0", "def_special", 1, "The Supreme Sorceress of Beasts gets manticores as special"},
-    {"wh2_dlc10_def_supreme_sorceress_dark", "wh2_dlc10_def_cav_doomfire_warlocks_0", "def_special", 1, "The Supreme Sorceress of Dark gets Doomfire Warlocks discounted"},
-    {"wh2_dlc10_def_supreme_sorceress_death", "wh2_main_def_inf_har_ganeth_executioners_0", "def_special", 1, "The Supreme Sorceress of Death gets Har Ganeth Excecutioners discounted"},
-    {"wh2_dlc10_def_supreme_sorceress_fire","wh2_main_def_mon_war_hydra", "def_rare", 1, "The Supreme Sorceress of Fire gets Hydras discounted"},
-    {"wh2_dlc10_def_supreme_sorceress_shadow", "wh2_main_def_inf_shades_1", "def_special", 1, "The Supreme Sorceress of Shadow gets discounted Shades"},
-    {"wh2_dlc10_def_supreme_sorceress_shadow", "wh2_main_def_inf_shades_2", "def_special", 1, "The Supreme Sorceress of Shadow gets discounted Shades"},
-    {"wh2_dlc10_def_crone_hellebron", "wh2_main_def_inf_har_ganeth_executioners_0", "def_special", 1, "Crone Hellebron gets Har Ganeth Excecutioners discounted"},
-    {"wh2_dlc14_def_malus_darkblade", "wh2_main_def_cav_cold_one_knights_1", "def_special", 1, "Malus gets discounted Dread Knights"},
-    {"wh2_main_def_malekith", "wh2_main_def_inf_black_guard_0", "def_special", 1, "Malekith gets discounted Black Guard"},
-    {"wh2_main_def_morathi", "wh2_dlc10_def_inf_sisters_of_slaughter", "def_special", 1, "Morathi gets discounted Sisters of Slaughter"},
-    {"wh2_main_def_morathi", "wh2_main_def_mon_war_hydra", "def_rare", 1, "Morathi gets Hydras discounted"},
-    {"wh2_twa03_def_rakarth", "wh2_main_def_mon_war_hydra", "def_special", 2, "Rakarth gets Hydras as special"},
-    {"wh2_dlc11_def_lokhir", "wh2_dlc10_def_mon_kharibdyss_0", "def_special", 2, "Lokhir gets Kharibdyss as special"}
+local dElf1PointRareUnits = {
+    ["wh2_main_def_inf_shades_0"] = 1,
+    ["wh2_twa03_def_mon_wolves_0"] = 1,
+    ["Cups of Coffee"] = 1
 }
+local dElf3PointRareUnits = {
+    ["wh2_main_def_mon_black_dragon"] = 3
+}
+
+local dElfSpecialRulesArray = {
+
+    {"wh2_main_def_dreadlord", {"wh2_main_def_inf_shades_0", "wh2_main_def_inf_shades_1", "wh2_main_def_inf_shades_2", "wh2_dlc14_def_cav_scourgerunner_chariot_0", "wh2_main_def_art_reaper_bolt_thrower"}},
+    {"wh2_main_def_dreadlord_fem", {"wh2_main_def_inf_black_guard_0", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_cav_cold_one_knights_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_cav_cold_one_chariot"}},
+    {"wh2_dlc14_def_high_beastmaster", {"wh2_dlc10_def_mon_feral_manticore_0", "wh2_main_def_mon_war_hydra", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_main_def_mon_black_dragon", "wh2_main_def_cav_cold_one_knights_0"}},
+    {"wh2_dlc10_def_supreme_sorceress_beasts", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_0", "wh2_dlc14_def_veh_bloodwrack_shrine_0", "wh2_dlc10_def_mon_feral_manticore_0", "wh2_main_def_mon_black_dragon"}},
+    {"wh2_dlc10_def_supreme_sorceress_dark", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_1", "wh2_dlc14_def_veh_bloodwrack_shrine_1", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_cav_scourgerunner_chariot_0"}},
+    {"wh2_dlc10_def_supreme_sorceress_death", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_2", "wh2_dlc14_def_veh_bloodwrack_shrine_2", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_dlc10_def_mon_kharibdyss_0"}},
+    {"wh2_dlc10_def_supreme_sorceress_fire", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_3", "wh2_dlc14_def_veh_bloodwrack_shrine_3", "wh2_main_def_mon_war_hydra", "wh2_main_def_mon_black_dragon"}},
+    {"wh2_dlc10_def_supreme_sorceress_shadow", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_4", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_main_def_inf_shades_0", "wh2_main_def_inf_shades_1"}},
+    {"wh2_dlc10_def_crone_hellebron", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0", "wh2_main_def_cav_cold_one_knights_1"}},
+    {"wh2_dlc11_def_lokhir", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}},
+    {"wh2_dlc14_def_malus_darkblade", {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "wh2_main_def_cav_cold_one_knights_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_cav_cold_one_chariot", "wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0"}},
+    {"wh2_main_def_malekith", {"wh2_main_def_inf_black_guard_0", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_art_reaper_bolt_thrower", "wh2_main_def_mon_black_dragon"}},
+    {"wh2_main_def_morathi", {"wh2_main_def_mon_war_hydra", "wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc14_def_veh_bloodwrack_shrine_1", "wh2_dlc10_def_cav_doomfire_warlocks_2", "wh2_dlc10_def_cav_slaanesh_harvesters_ror_0"}},
+    {"wh2_twa03_def_rakarth", {"wh2_twa03_def_mon_wolves_0", "wh2_twa03_def_mon_war_mammoth_0", "wh2_main_def_mon_war_hydra", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_main_def_mon_black_dragon"}},
+    {"wh2_main_def_black_ark", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}},
+    {"wh2_main_def_black_ark_blessed_dread", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}}
+
+    }
 
 local unit_text_overrides = {
     ["wh2_main_lzd_mon_kroxigors_nakai"]  = {
@@ -1024,12 +1033,18 @@ rm:add_post_setup_callback(function()
     rm:set_ui_profile_for_unit_override("core_plague_monks", "[[col:yellow]]Special Rule: [[/col]] Lord Skrolk can recruit Plague Monks as Core units in his armies. \n Armies may have an unlimited number of Core Units.", "ui/custom/recruitment_controls/common_units.png")
     rm:log("Added Skrolk Special Rule")
 
-    for i = 1, #lordsSpecialRules do
-        local ruleName = lordsSpecialRules[i][1].."-"..lordsSpecialRules[i][2]
-        rm:create_unit_override(lordsSpecialRules[i][2], ruleName, lordsSpecialRules[i][3], lordsSpecialRules[i][4])
-        rm:add_subtype_filter_for_unit_override(lordsSpecialRules[i][1], ruleName)
-        rm:set_ui_profile_for_unit_override(ruleName, lordsSpecialRules[i][5])
-        rm:log("Added Special Rule "..ruleName)
+    for i = 1, #dElfSpecialRulesArray do
+        local lordName = dElfSpecialRulesArray[i][1]
+        for j = 1, #dElfSpecialRulesArray[i][2] do
+            local unitType = dElfSpecialRulesArray[i][j]
+            local unitWeight = 2
+            if dElf1PointRareUnits[unitType] then unitWeight = 1 end
+            if dElf3PointRareUnits[unitType] then unitWeight = 3 end
+            local ruleName = lordName.."-"..unitType
+            rm:create_unit_override(unitType, ruleName, def_special, unitWeight)
+            rm:add_subtype_filter_for_unit_override(lordName, ruleName)
+            rm:log("Added Special Rule "..ruleName)
+        end
     end
 
     --this sets up the AI

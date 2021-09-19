@@ -499,7 +499,7 @@ function recruiter_character.get_quantity_limit_for_group(self, groupID)
         local lordLevel = lordChar:rank()
         local levelModifier = (lordLevel - (lordLevel % 5))/5
         if string.find(groupID, "special") then
-            groupLimit = 2 + levelModifier*2
+            groupLimit = 10 + levelModifier
         elseif string.find(groupID, "rare") then
             groupLimit = 1 + levelModifier
         else
