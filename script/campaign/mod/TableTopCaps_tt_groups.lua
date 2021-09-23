@@ -639,75 +639,70 @@ local units = {
     {"wh2_main_skv_inf_night_runners_0", "skv_core"},
     {"wh2_main_skv_inf_night_runners_1", "skv_core"},
     {"wh2_main_skv_inf_skavenslave_slingers_0", "skv_core"},
-    --SPECIAL
-    {"wh2_main_skv_mon_rat_ogres", "skv_special", 2},
-    {"wh2_main_skv_inf_death_runners_0", "skv_special", 1},
-    {"wh2_main_skv_inf_gutter_runner_slingers_0", "skv_special", 1},
-    {"wh2_main_skv_inf_gutter_runner_slingers_1", "skv_special", 1},
-    {"wh2_main_skv_inf_gutter_runners_0", "skv_special", 1},
-    {"wh2_main_skv_inf_gutter_runners_1", "skv_special", 1},
-    {"wh2_main_skv_inf_poison_wind_globadiers", "skv_special", 2},
-    {"wh2_main_skv_inf_warpfire_thrower", "skv_special", 1},
-    {"wh2_main_skv_inf_plague_monk_censer_bearer", "skv_special", 2},
-    {"wh2_main_skv_inf_plague_monks", "skv_special", 1},
-    {"wh2_main_skv_inf_stormvermin_0", "skv_special", 1},
-    {"wh2_main_skv_inf_stormvermin_1", "skv_special", 1},
-    {"wh2_dlc12_skv_inf_ratling_gun_0", "skv_special", 1},
-    {"wh2_dlc12_skv_inf_warplock_jezzails_0", "skv_special", 2},
-    {"wh2_dlc12_skv_veh_doom_flayer_0", "skv_special", 2},
-    {"wh2_dlc14_skv_inf_eshin_triads_0", "skv_special", 1},
-    {"wh2_dlc14_skv_inf_poison_wind_mortar_0", "skv_special", 2},
-    {"wh2_dlc14_skv_inf_warp_grinder_0", "skv_special", 1},
-    {"wh2_dlc16_skv_mon_rat_ogre_mutant", "skv_special", 3},
-    {"wh2_dlc16_skv_mon_wolf_rats_0", "skv_special", 1},
-    {"wh2_dlc16_skv_mon_wolf_rats_1", "skv_special", 1},
     --RARE
+    {"wh2_main_skv_mon_rat_ogres", "skv_rare", 2},
+    {"wh2_main_skv_inf_death_runners_0", "skv_rare", 1},
+    {"wh2_main_skv_inf_gutter_runner_slingers_0", "skv_rare", 1},
+    {"wh2_main_skv_inf_gutter_runner_slingers_1", "skv_rare", 1},
+    {"wh2_main_skv_inf_gutter_runners_0", "skv_rare", 1},
+    {"wh2_main_skv_inf_gutter_runners_1", "skv_rare", 1},
+    {"wh2_main_skv_inf_poison_wind_globadiers", "skv_rare", 2},
+    {"wh2_main_skv_inf_warpfire_thrower", "skv_rare", 2},
+    {"wh2_main_skv_inf_plague_monk_censer_bearer", "skv_rare", 2},
+    {"wh2_main_skv_inf_plague_monks", "skv_rare", 1},
+    {"wh2_main_skv_inf_stormvermin_0", "skv_rare", 2},
+    {"wh2_main_skv_inf_stormvermin_1", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_ratling_gun_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_warplock_jezzails_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_veh_doom_flayer_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_eshin_triads_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_poison_wind_mortar_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_warp_grinder_0", "skv_rare", 2},
+    {"wh2_dlc16_skv_mon_rat_ogre_mutant", "skv_rare", 3},
+    {"wh2_dlc16_skv_mon_wolf_rats_0", "skv_rare", 1},
+    {"wh2_dlc16_skv_mon_wolf_rats_1", "skv_rare", 1},
     {"wh2_main_skv_art_plagueclaw_catapult", "skv_rare", 2},
     {"wh2_main_skv_art_warp_lightning_cannon", "skv_rare", 2},
-    {"wh2_main_skv_veh_doomwheel", "skv_rare", 2},
+    {"wh2_main_skv_veh_doomwheel", "skv_rare", 3},
     {"wh2_main_skv_mon_hell_pit_abomination", "skv_rare", 3},
-    {"wh2_main_skv_inf_death_globe_bombardiers", "skv_rare", 1},
+    {"wh2_main_skv_inf_death_globe_bombardiers", "skv_rare", 2},
     {"wh2_dlc16_skv_mon_brood_horror_0", "skv_rare", 2},
     
     -------IKIT CLAW FORBIDDEN WORKSHOP ROR-------
-    --SPECIAL
-    {"wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0", "skv_special", 2},
-    {"wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0", "skv_special", 1},
-    {"wh2_dlc12_skv_inf_ratling_gun_ror_tech_lab_0",  "skv_special", 1},
-    {"wh2_dlc12_skv_art_warplock_jezzails_ror_tech_lab_0", "skv_special", 2},
-    --RARE
+    {"wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_ratling_gun_ror_tech_lab_0",  "skv_rare", 2},
+    {"wh2_dlc12_skv_art_warplock_jezzails_ror_tech_lab_0", "skv_rare", 2},
     {"wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0", "skv_rare", 2},
     
     -------THROT'S FLESH LAB ROR-------
     --CORE
     {"wh2_dlc16_skv_inf_skavenslaves_0_flesh_lab", "skv_core"},
     {"wh2_dlc16_skv_inf_skavenslave_spearmen_0_flesh_lab", "skv_core"},
-    --SPECIAL
-    {"wh2_dlc16_skv_mon_rat_ogre_mutant_flesh_lab", "skv_special", 3},
-    {"wh2_dlc16_skv_mon_wolf_rats_0_flesh_lab", "skv_special", 1},
-    {"wh2_dlc16_skv_mon_wolf_rats_1_flesh_lab", "skv_special", 1},
-    {"wh2_dlc16_skv_mon_rat_ogres_flesh_lab", "skv_special", 1},
     --RARE
+    {"wh2_dlc16_skv_mon_rat_ogre_mutant_flesh_lab", "skv_rare", 2},
+    {"wh2_dlc16_skv_mon_wolf_rats_0_flesh_lab", "skv_rare", 1},
+    {"wh2_dlc16_skv_mon_wolf_rats_1_flesh_lab", "skv_rare", 1},
+    {"wh2_dlc16_skv_mon_rat_ogres_flesh_lab", "skv_rare", 2},
     {"wh2_dlc16_skv_mon_brood_horror_0_flesh_lab", "skv_rare", 2},
     {"wh2_dlc16_skv_mon_hell_pit_abomination_flesh_lab", "skv_rare", 3},
     
     -------ROR-------
     --CORE
     {"wh2_dlc12_skv_inf_clanrats_ror_0", "skv_core"},
-    --SPECIAL
-    {"wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror_0", "skv_special", 2},
-    {"wh2_dlc12_skv_inf_stormvermin_ror_0", "skv_special", 1},
-    {"wh2_dlc12_skv_inf_ratling_gun_ror_0", "skv_special", 1},
-    {"wh2_dlc12_skv_inf_warplock_jezzails_ror_0", "skv_special", 2},
-    {"wh2_dlc12_skv_veh_doom_flayer_ror_0", "skv_special", 2},
-    {"wh2_dlc14_skv_inf_eshin_triads_ror_0", "skv_special", 1},
-    {"wh2_dlc14_skv_inf_poison_wind_mortar_ror_0", "skv_special", 2},
-    {"wh2_dlc14_skv_inf_death_runners_ror_0", "skv_special", 2},
-    {"wh2_dlc16_skv_mon_rat_ogre_mutant_ror_0", "skv_special", 3},
-    {"wh2_dlc16_skv_mon_rat_ogres_ror_0", "skv_special", 2},
     --RARE
+    {"wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_stormvermin_ror_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_ratling_gun_ror_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_inf_warplock_jezzails_ror_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_veh_doom_flayer_ror_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_eshin_triads_ror_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_poison_wind_mortar_ror_0", "skv_rare", 2},
+    {"wh2_dlc14_skv_inf_death_runners_ror_0", "skv_rare", 2},
+    {"wh2_dlc16_skv_mon_rat_ogre_mutant_ror_0", "skv_rare", 3},
+    {"wh2_dlc16_skv_mon_rat_ogres_ror_0", "skv_rare", 2},
     {"wh2_dlc12_skv_art_warp_lightning_cannon_ror_0", "skv_rare", 2},
-    {"wh2_dlc12_skv_veh_doomwheel_ror_0", "skv_rare", 2},
+    {"wh2_dlc12_skv_veh_doomwheel_ror_0", "skv_rare", 3},
     {"wh2_dlc16_skv_mon_hell_pit_abomination_ror_0", "skv_rare", 3},
     
     
@@ -719,47 +714,45 @@ local units = {
     --CORE
     {"wh2_main_hef_inf_archers_0", "hef_core"},
     {"wh2_main_hef_inf_archers_1", "hef_core"},
-    {"wh2_main_hef_inf_lothern_sea_guard_0", "hef_core"},
-    {"wh2_main_hef_inf_lothern_sea_guard_1", "hef_core"},
     {"wh2_main_hef_cav_ellyrian_reavers_1", "hef_core"},
     {"wh2_main_hef_inf_spearmen_0", "hef_core"},
     {"wh2_main_hef_cav_ellyrian_reavers_0", "hef_core"},
-    {"wh2_main_hef_cav_silver_helms_0", "hef_core"},
-    {"wh2_main_hef_cav_silver_helms_1", "hef_core"},
     {"wh2_dlc15_hef_inf_rangers_0", "hef_core"},
-    --SPECIAL
-    {"wh2_main_hef_inf_phoenix_guard", "hef_special", 2},
-    {"wh2_main_hef_inf_swordmasters_of_hoeth_0", "hef_special", 2},
-    {"wh2_main_hef_inf_white_lions_of_chrace_0", "hef_special", 1},
-    {"wh2_main_hef_cav_dragon_princes", "hef_special", 2},
-    {"wh2_main_hef_cav_ithilmar_chariot", "hef_special", 2},
-    {"wh2_main_hef_cav_tiranoc_chariot", "hef_special", 1},
-    {"wh2_dlc10_hef_inf_shadow_warriors_0", "hef_special", 1},
-    {"wh2_dlc15_hef_inf_silverin_guard_0", "hef_special", 1},
-    {"wh2_dlc15_hef_mon_war_lions_of_chrace_0", "hef_special", 1},
-    {"wh2_dlc15_hef_veh_lion_chariot_of_chrace_0", "hef_special", 2},
-    {"wh2_main_hef_art_eagle_claw_bolt_thrower", "hef_special", 2},
     --RARE
-    {"wh2_main_hef_mon_great_eagle", "hef_rare", 1},
-    {"wh2_main_hef_mon_moon_dragon", "hef_rare", 2},
-    {"wh2_main_hef_mon_phoenix_flamespyre", "hef_rare", 2},
-    {"wh2_main_hef_mon_phoenix_frostheart", "hef_rare", 2},
+    {"wh2_main_hef_inf_lothern_sea_guard_0", "hef_rare", 1},
+    {"wh2_main_hef_inf_lothern_sea_guard_1", "hef_rare", 1},
+    {"wh2_dlc10_hef_inf_sisters_of_avelorn_0", "hef_rare", 2},
+    {"wh2_main_hef_inf_phoenix_guard", "hef_rare", 2},
+    {"wh2_main_hef_inf_swordmasters_of_hoeth_0", "hef_rare", 2},
+    {"wh2_main_hef_inf_white_lions_of_chrace_0", "hef_rare", 1},
+    {"wh2_dlc10_hef_inf_shadow_warriors_0", "hef_rare", 1},
+    {"wh2_dlc15_hef_inf_silverin_guard_0", "hef_rare", 1},
+    {"wh2_main_hef_cav_silver_helms_0", "hef_rare", 2},
+    {"wh2_main_hef_cav_silver_helms_1", "hef_rare", 2},
+    {"wh2_main_hef_cav_dragon_princes", "hef_rare", 2},
+    {"wh2_main_hef_cav_ithilmar_chariot", "hef_rare", 2},
+    {"wh2_main_hef_cav_tiranoc_chariot", "hef_rare", 2},
+    {"wh2_dlc15_hef_mon_war_lions_of_chrace_0", "hef_rare", 1},
+    {"wh2_dlc15_hef_veh_lion_chariot_of_chrace_0", "hef_rare", 2},
+    {"wh2_main_hef_art_eagle_claw_bolt_thrower", "hef_rare", 2},
+    {"wh2_main_hef_mon_great_eagle", "hef_rare", 2},
+    {"wh2_main_hef_mon_moon_dragon", "hef_rare", 3},
+    {"wh2_main_hef_mon_phoenix_flamespyre", "hef_rare", 3},
+    {"wh2_main_hef_mon_phoenix_frostheart", "hef_rare", 3},
     {"wh2_main_hef_mon_star_dragon", "hef_rare", 3},
-    {"wh2_main_hef_mon_sun_dragon", "hef_rare", 2},
-    {"wh2_dlc10_hef_inf_sisters_of_avelorn_0", "hef_rare", 1},
-    {"wh2_dlc15_hef_mon_arcane_phoenix_0", "hef_rare", 2},
+    {"wh2_main_hef_mon_sun_dragon", "hef_rare", 3},
+    {"wh2_dlc15_hef_mon_arcane_phoenix_0", "hef_rare", 3},
     
     -------FACTION UNIQUES-------
     --CORE
     {"wh2_dlc10_hef_inf_dryads_0", "hef_core"}, --ALARIELLE UNIQUE
-    --SPECIAL
-    {"wh2_dlc10_hef_mon_treekin_0", "hef_special", 2}, --ALARIELLE UNIQUE
-    {"wh2_dlc10_hef_inf_shadow_walkers_0", "hef_special", 2}, --ALITH ANAR UNIQUE
-    {"wh2_dlc15_hef_inf_mistwalkers_faithbearers_0", "hef_special", 1},  --ELTHARION UNIQUE
-    {"wh2_dlc15_hef_inf_mistwalkers_sentinels_0", "hef_special", 1}, --ELTHARION UNIQUE
-    {"wh2_dlc15_hef_inf_mistwalkers_skyhawks_0", "hef_special", 1}, --ELTHARION UNIQUE
-    {"wh2_dlc15_hef_inf_mistwalkers_spireguard_0", "hef_special", 1}, --ELTHARION UNIQUE
     --RARE
+    {"wh2_dlc10_hef_mon_treekin_0", "hef_rare", 2}, --ALARIELLE UNIQUE
+    {"wh2_dlc10_hef_inf_shadow_walkers_0", "hef_rare", 2}, --ALITH ANAR UNIQUE
+    {"wh2_dlc15_hef_inf_mistwalkers_faithbearers_0", "hef_rare", 1},  --ELTHARION UNIQUE
+    {"wh2_dlc15_hef_inf_mistwalkers_sentinels_0", "hef_rare", 1}, --ELTHARION UNIQUE
+    {"wh2_dlc15_hef_inf_mistwalkers_skyhawks_0", "hef_rare", 1}, --ELTHARION UNIQUE
+    {"wh2_dlc15_hef_inf_mistwalkers_spireguard_0", "hef_rare", 1}, --ELTHARION UNIQUE
     {"wh2_dlc10_hef_mon_treeman_0", "hef_rare", 3}, --ALARIELLE UNIQUE
     {"wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0", "hef_rare", 3}, --ELTHARION UNIQUE
     {"wh2_dlc15_hef_mon_black_dragon_imrik", "hef_rare", 3}, --IMRIK UNIQUE
@@ -771,16 +764,15 @@ local units = {
     -------ROR-------
     --CORE
     {"wh2_dlc10_hef_inf_the_scions_of_mathlann_ror_0", "hef_core"},
-    {"wh2_dlc10_hef_inf_the_storm_riders_ror_0", "hef_core"},
     {"wh2_dlc15_hef_inf_archers_ror_0", "hef_core"},
-    --SPECIAL
-    {"wh2_dlc10_hef_inf_the_silverpelts_ror_0", "hef_special", 1},
-    {"wh2_dlc10_hef_inf_keepers_of_the_flame_ror_0", "hef_special", 2},
-    {"wh2_dlc10_hef_inf_the_grey_ror_0", "hef_special", 1},
-    {"wh2_dlc10_hef_cav_the_fireborn_ror_0", "hef_special", 2},
-    {"wh2_dlc10_hef_cav_the_heralds_of_the_wind_ror_0", "hef_special", 1},
-    {"wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0", "hef_special", 1},
     --RARE
+    {"wh2_dlc10_hef_inf_the_storm_riders_ror_0", "hef_rare", 1},
+    {"wh2_dlc10_hef_inf_the_silverpelts_ror_0", "hef_rare", 1},
+    {"wh2_dlc10_hef_inf_keepers_of_the_flame_ror_0", "hef_rare", 2},
+    {"wh2_dlc10_hef_inf_the_grey_ror_0", "hef_rare", 1},
+    {"wh2_dlc10_hef_cav_the_fireborn_ror_0", "hef_rare", 2},
+    {"wh2_dlc10_hef_cav_the_heralds_of_the_wind_ror_0", "hef_rare", 1},
+    {"wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0", "hef_rare", 1},
     {"wh2_dlc10_hef_inf_everqueens_court_guards_ror_0", "hef_rare", 1},
     {"wh2_dlc15_hef_mon_arcane_phoenix_ror_0", "hef_rare", 2},
     
