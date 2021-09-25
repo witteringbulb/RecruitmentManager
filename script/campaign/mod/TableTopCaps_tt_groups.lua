@@ -610,7 +610,7 @@ local units = {
     --SPECIAL
     {"wh2_dlc12_lzd_inf_skink_red_crested_ror_0", "lzd_special", 1},
     {"wh2_dlc12_lzd_inf_saurus_warriors_ror_0", "lzd_rare", 1},
-    {"wh2_dlc12_lzd_inf_temple_guards_ror_0", "lzd_rare", 1},
+    {"wh2_dlc12_lzd_inf_temple_guards_ror_0", "lzd_rare", 2},
     {"wh2_dlc12_lzd_mon_salamander_pack_ror_0", "lzd_rare", 2},
     {"wh2_dlc12_lzd_cav_cold_one_spearriders_ror_0", "lzd_rare", 2},
     {"wh2_dlc12_lzd_cav_ripperdactyl_riders_ror_0", "lzd_rare", 1},
@@ -774,7 +774,7 @@ local units = {
     {"wh2_dlc10_hef_cav_the_heralds_of_the_wind_ror_0", "hef_rare", 1},
     {"wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0", "hef_rare", 1},
     {"wh2_dlc10_hef_inf_everqueens_court_guards_ror_0", "hef_rare", 1},
-    {"wh2_dlc15_hef_mon_arcane_phoenix_ror_0", "hef_rare", 2},
+    {"wh2_dlc15_hef_mon_arcane_phoenix_ror_0", "hef_rare", 3},
     
     
     ---------------------------------------------------------------
@@ -958,33 +958,1023 @@ local units = {
 
 local dElf1PointRareUnits = {
     ["wh2_main_def_inf_shades_0"] = 1,
-    ["wh2_twa03_def_mon_wolves_0"] = 1,
-    ["Cups of Coffee"] = 1
+    ["wh2_twa03_def_mon_wolves_0"] = 1
 }
 local dElf3PointRareUnits = {
     ["wh2_main_def_mon_black_dragon"] = 3
 }
 
 local dElfSpecialRulesArray = {
-
-    {"wh2_main_def_dreadlord", {"wh2_main_def_inf_shades_0", "wh2_main_def_inf_shades_1", "wh2_main_def_inf_shades_2", "wh2_dlc14_def_cav_scourgerunner_chariot_0", "wh2_main_def_art_reaper_bolt_thrower"}},
-    {"wh2_main_def_dreadlord_fem", {"wh2_main_def_inf_black_guard_0", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_cav_cold_one_knights_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_cav_cold_one_chariot"}},
-    {"wh2_dlc14_def_high_beastmaster", {"wh2_dlc10_def_mon_feral_manticore_0", "wh2_main_def_mon_war_hydra", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_main_def_mon_black_dragon", "wh2_main_def_cav_cold_one_knights_0"}},
-    {"wh2_dlc10_def_supreme_sorceress_beasts", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_0", "wh2_dlc14_def_veh_bloodwrack_shrine_0", "wh2_dlc10_def_mon_feral_manticore_0", "wh2_main_def_mon_black_dragon"}},
-    {"wh2_dlc10_def_supreme_sorceress_dark", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_1", "wh2_dlc14_def_veh_bloodwrack_shrine_1", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_cav_scourgerunner_chariot_0"}},
-    {"wh2_dlc10_def_supreme_sorceress_death", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_2", "wh2_dlc14_def_veh_bloodwrack_shrine_2", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_dlc10_def_mon_kharibdyss_0"}},
-    {"wh2_dlc10_def_supreme_sorceress_fire", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_3", "wh2_dlc14_def_veh_bloodwrack_shrine_3", "wh2_main_def_mon_war_hydra", "wh2_main_def_mon_black_dragon"}},
-    {"wh2_dlc10_def_supreme_sorceress_shadow", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc10_def_cav_doomfire_warlocks_4", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_main_def_inf_shades_0", "wh2_main_def_inf_shades_1"}},
-    {"wh2_dlc10_def_crone_hellebron", {"wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0", "wh2_main_def_cav_cold_one_knights_1"}},
-    {"wh2_dlc11_def_lokhir", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}},
-    {"wh2_dlc14_def_malus_darkblade", {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "wh2_main_def_cav_cold_one_knights_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_cav_cold_one_chariot", "wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0"}},
-    {"wh2_main_def_malekith", {"wh2_main_def_inf_black_guard_0", "wh2_main_def_inf_har_ganeth_executioners_0", "wh2_main_def_cav_cold_one_knights_1", "wh2_main_def_art_reaper_bolt_thrower", "wh2_main_def_mon_black_dragon"}},
-    {"wh2_main_def_morathi", {"wh2_main_def_mon_war_hydra", "wh2_dlc10_def_inf_sisters_of_slaughter", "wh2_dlc14_def_veh_bloodwrack_shrine_1", "wh2_dlc10_def_cav_doomfire_warlocks_2", "wh2_dlc10_def_cav_slaanesh_harvesters_ror_0"}},
-    {"wh2_twa03_def_rakarth", {"wh2_twa03_def_mon_wolves_0", "wh2_twa03_def_mon_war_mammoth_0", "wh2_main_def_mon_war_hydra", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_main_def_mon_black_dragon"}},
-    {"wh2_main_def_black_ark", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}},
-    {"wh2_main_def_black_ark_blessed_dread", {"wh2_main_def_art_reaper_bolt_thrower", "wh2_dlc10_def_mon_kharibdyss_0", "wh2_dlc14_def_mon_bloodwrack_medusa_0", "wh2_dlc14_def_veh_bloodwrack_shrine_4", "wh2_dlc10_def_mon_feral_manticore_0"}}
-
+    {
+        "wh2_main_def_dreadlord",
+        {
+            "wh2_main_def_inf_shades_0",
+            "wh2_main_def_inf_shades_1",
+            "wh2_main_def_inf_shades_2",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_ror_0",
+            "wh2_main_def_art_reaper_bolt_thrower"
+        }
+    },
+    {
+        "wh2_main_def_dreadlord_fem",
+        {
+            "wh2_main_def_inf_black_guard_0",
+            "wh2_main_def_inf_har_ganeth_executioners_0",
+            "wh2_main_def_cav_cold_one_knights_0",
+            "wh2_main_def_cav_cold_one_knights_1",
+            "wh2_main_def_cav_cold_one_chariot"
+        }
+    },
+    {
+        "wh2_dlc14_def_high_beastmaster",
+        {
+            "wh2_dlc10_def_mon_feral_manticore_0",
+            "wh2_main_def_mon_war_hydra",
+            "wh2_dlc10_def_mon_chill_of_sontar_ror_0",
+            "wh2_dlc10_def_mon_kharibdyss_0",
+            "wh2_main_def_mon_black_dragon",
+            "wh2_main_def_cav_cold_one_knights_0"
+        }
+    },
+    {
+        "wh2_dlc10_def_supreme_sorceress_beasts",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc10_def_cav_doomfire_warlocks_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_dlc10_def_mon_feral_manticore_0",
+            "wh2_main_def_mon_black_dragon"
+        }
+    },
+    {
+        "wh2_dlc10_def_supreme_sorceress_dark",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc10_def_cav_doomfire_warlocks_1",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_main_def_inf_black_guard_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_ror_0"
+        }
+    },
+    {
+        "wh2_dlc10_def_supreme_sorceress_death",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc10_def_cav_doomfire_warlocks_1",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_main_def_inf_har_ganeth_executioners_0",
+            "wh2_dlc10_def_mon_kharibdyss_0"
+        }
+    },
+    {
+        "wh2_dlc10_def_supreme_sorceress_fire",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc10_def_cav_doomfire_warlocks_1",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_main_def_mon_war_hydra",
+            "wh2_dlc10_def_mon_chill_of_sontar_ror_0",
+            "wh2_main_def_mon_black_dragon"
+        }
+    },
+    {
+        "wh2_dlc10_def_supreme_sorceress_shadow",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc10_def_cav_doomfire_warlocks_4",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_main_def_inf_shades_0",
+            "wh2_main_def_inf_shades_1"
+        }
+    },
+    {
+        "wh2_dlc10_def_crone_hellebron",
+        {
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_main_def_inf_har_ganeth_executioners_0",
+            "wh2_main_def_art_reaper_bolt_thrower",
+            "wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0",
+            "wh2_main_def_cav_cold_one_knights_1"
+        }
+    },
+    {
+        "wh2_dlc11_def_lokhir",
+        {
+            "wh2_main_def_art_reaper_bolt_thrower",
+            "wh2_dlc10_def_mon_kharibdyss_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_4",
+            "wh2_dlc10_def_mon_feral_manticore_0"
+        }
+    },
+    {
+        "wh2_dlc14_def_malus_darkblade",
+        {
+            "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_ror_0",
+            "wh2_main_def_cav_cold_one_knights_0",
+            "wh2_main_def_cav_cold_one_knights_1",
+            "wh2_main_def_cav_cold_one_chariot",
+            "wh2_dlc10_def_cav_knights_of_the_ebon_claw_ror_0"
+        }
+    },
+    {
+        "wh2_main_def_malekith",
+        {
+            "wh2_main_def_inf_black_guard_0",
+            "wh2_main_def_inf_har_ganeth_executioners_0",
+            "wh2_main_def_cav_cold_one_knights_1",
+            "wh2_main_def_art_reaper_bolt_thrower",
+            "wh2_main_def_mon_black_dragon"
+        }
+    },
+    {
+        "wh2_main_def_morathi",
+        {
+            "wh2_main_def_mon_war_hydra",
+            "wh2_dlc10_def_mon_chill_of_sontar_ror_0",
+            "wh2_dlc10_def_inf_sisters_of_slaughter",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_dlc10_def_cav_doomfire_warlocks_1",
+            "wh2_dlc10_def_cav_slaanesh_harvesters_ror_0"
+        }
+    },
+    {
+        "wh2_twa03_def_rakarth",
+        {
+            "wh2_twa03_def_mon_wolves_0",
+            "wh2_twa03_def_mon_war_mammoth_0",
+            "wh2_main_def_mon_war_hydra",
+            "wh2_dlc10_def_mon_chill_of_sontar_ror_0",
+            "wh2_dlc10_def_mon_kharibdyss_0",
+            "wh2_main_def_mon_black_dragon"
+        }
+    },
+    {
+        "wh2_main_def_black_ark",
+        {
+            "wh2_main_def_art_reaper_bolt_thrower",
+            "wh2_dlc10_def_mon_kharibdyss_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_ror_0",
+            "wh2_dlc10_def_mon_feral_manticore_0"
+        }
+    },
+    {
+        "wh2_main_def_black_ark_blessed_dread",
+        {
+            "wh2_main_def_art_reaper_bolt_thrower",
+            "wh2_dlc10_def_mon_kharibdyss_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_veh_bloodwrack_shrine_0",
+            "wh2_dlc14_def_mon_bloodwrack_medusa_ror_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_0",
+            "wh2_dlc14_def_cav_scourgerunner_chariot_ror_0",
+            "wh2_dlc10_def_mon_feral_manticore_0"
+        }
     }
+}
+
+local lizMan1PointRareUnits = {
+    ["wh2_main_lzd_cav_terradon_riders_0"] = 1,
+    ["wh2_main_lzd_cav_terradon_riders_1"] = 1,
+    ["wh2_main_lzd_inf_chameleon_skinks_0"] = 1,
+    ["wh2_dlc12_lzd_cav_ripperdactyl_riders_0"] = 1,
+    ["wh2_dlc17_lzd_inf_chameleon_stalkers_0"] = 1,
+    ["wh2_main_lzd_inf_saurus_spearmen_0"] = 1,
+    ["wh2_main_lzd_inf_saurus_spearmen_1"] = 1,
+    ["wh2_main_lzd_inf_saurus_warriors_0"] = 1,
+    ["wh2_main_lzd_inf_saurus_warriors_1"] = 1,
+    ["wh2_dlc12_lzd_inf_skink_red_crested_ror_0"] = 1,
+    ["wh2_dlc12_lzd_inf_saurus_warriors_ror_0"] = 1,
+    ["wh2_main_lzd_inf_saurus_spearmen_blessed_1"] = 1,
+    ["wh2_main_lzd_inf_saurus_warriors_blessed_1"] = 1,
+    ["wh2_main_lzd_cav_terradon_riders_blessed_1"] = 1,
+    ["wh2_main_lzd_inf_chameleon_skinks_blessed_0"] = 1,
+    ["wh2_dlc12_lzd_cav_ripperdactyl_riders_ror_0"] = 1,
+    ["wh2_dlc12_lzd_cav_terradon_riders_ror_0"] = 1
+}
+local lizMan3PointRareUnits = {
+    ["wh2_main_lzd_mon_bastiladon_1"] = 3,
+    ["wh2_main_lzd_mon_bastiladon_2"] = 3,
+    ["wh2_main_lzd_mon_stegadon_0"] = 3,
+    ["wh2_main_lzd_mon_stegadon_1"] = 3,
+    ["wh2_dlc12_lzd_mon_bastiladon_3"] = 3,
+    ["wh2_main_lzd_mon_ancient_stegadon"] = 3,
+    ["wh2_main_lzd_mon_carnosaur_0"] = 3,
+    ["wh2_dlc12_lzd_mon_ancient_stegadon_1"] = 3,
+    ["wh2_dlc13_lzd_mon_dread_saurian_0"] = 3,
+    ["wh2_dlc13_lzd_mon_dread_saurian_1"] = 3,
+    ["wh2_dlc17_lzd_mon_coatl_0"] = 3,
+    ["wh2_dlc17_lzd_mon_troglodon_0"] = 3,
+    ["wh2_main_lzd_mon_carnosaur_blessed_0"] = 3,
+    ["wh2_main_lzd_mon_stegadon_blessed_1"] = 3,
+    ["wh2_dlc12_lzd_mon_ancient_stegadon_1_nakai"] = 3,
+    ["wh2_dlc12_lzd_mon_ancient_stegadon_ror_0"] = 3,
+    ["wh2_dlc13_lzd_mon_dread_saurian_ror_0"] = 3,
+    ["wh2_dlc17_lzd_mon_carnosaur_ror_0"] = 3,
+    ["wh2_dlc17_lzd_mon_coatl_ror_0"] = 3,
+    ["wh2_dlc17_lzd_mon_troglodon_ror_0"] = 3
+}
+
+local lizManSpecialRulesArray = {
+    {
+        "wh2_dlc13_lzd_kroxigor_ancient",
+        {
+            "wh2_main_lzd_mon_kroxigors",
+            "wh2_main_lzd_mon_kroxigors_blessed",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0",
+            "wh2_dlc13_lzd_mon_razordon_pack_0",
+            "wh2_dlc13_lzd_mon_razordon_pack_ror_0",
+            "wh2_main_lzd_mon_bastiladon_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_kroxigor_ancient_horde",
+        {
+            "wh2_main_lzd_mon_kroxigors",
+            "wh2_main_lzd_mon_kroxigors_blessed",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0",
+            "wh2_dlc13_lzd_mon_razordon_pack_0",
+            "wh2_dlc13_lzd_mon_razordon_pack_ror_0",
+            "wh2_main_lzd_mon_bastiladon_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0"
+        }
+    },
+    {
+        "wh2_dlc12_lzd_red_crested_skink_chief",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_main_lzd_mon_stegadon_1",
+            "wh2_main_lzd_mon_ancient_stegadon",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0"
+        }
+    },
+    {
+        "wh2_dlc12_lzd_red_crested_skink_chief_legendary",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_main_lzd_mon_stegadon_1",
+            "wh2_main_lzd_mon_ancient_stegadon",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_red_crested_skink_chief_horde",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_main_lzd_mon_stegadon_1",
+            "wh2_main_lzd_mon_ancient_stegadon",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_saurus_old_blood_horde",
+        {
+            "wh2_main_lzd_cav_cold_ones_1",
+            "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0",
+            "wh2_main_lzd_inf_saurus_spearmen_0",
+            "wh2_main_lzd_inf_saurus_spearmen_1",
+            "wh2_main_lzd_inf_saurus_spearmen_blessed_1"
+        }
+    },
+    {
+        "wh2_main_lzd_saurus_old_blood",
+        {
+            "wh2_main_lzd_cav_cold_ones_1",
+            "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0",
+            "wh2_main_lzd_inf_saurus_spearmen_0",
+            "wh2_main_lzd_inf_saurus_spearmen_1",
+            "wh2_main_lzd_inf_saurus_spearmen_blessed_1"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_fire",
+        {
+            "wh2_dlc12_lzd_mon_ancient_salamander_0",
+            "wh2_dlc12_lzd_mon_salamander_pack_0",
+            "wh2_dlc12_lzd_mon_salamander_pack_ror_0",
+            "wh2_main_lzd_mon_bastiladon_2",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_fire_horde",
+        {
+            "wh2_dlc12_lzd_mon_ancient_salamander_0",
+            "wh2_dlc12_lzd_mon_salamander_pack_0",
+            "wh2_dlc12_lzd_mon_salamander_pack_ror_0",
+            "wh2_main_lzd_mon_bastiladon_2",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_high",
+        {
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_mon_bastiladon_2",
+            "wh2_main_lzd_mon_bastiladon_1",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_high_horde",
+        {
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_mon_bastiladon_2",
+            "wh2_main_lzd_mon_bastiladon_1",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_life",
+        {
+            "wh2_main_lzd_mon_kroxigors",
+            "wh2_main_lzd_mon_kroxigors_blessed",
+            "wh2_main_lzd_mon_bastiladon_0",
+            "wh2_main_lzd_mon_bastiladon_1",
+            "wh2_main_lzd_mon_bastiladon_3",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_slann_mage_priest_life_horde",
+        {
+            "wh2_main_lzd_mon_kroxigors",
+            "wh2_main_lzd_mon_kroxigors_blessed",
+            "wh2_main_lzd_mon_bastiladon_0",
+            "wh2_main_lzd_mon_bastiladon_1",
+            "wh2_main_lzd_mon_bastiladon_3",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_main_lzd_slann_mage_priest",
+        {
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_dlc17_lzd_mon_coatl_0",
+            "wh2_dlc17_lzd_mon_coatl_ror_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_main_lzd_slann_mage_priest_horde",
+        {
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_dlc17_lzd_mon_coatl_0",
+            "wh2_dlc17_lzd_mon_coatl_ror_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc12_lzd_tehenhauin",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+            "wh2_dlc17_lzd_mon_coatl_0",
+            "wh2_dlc17_lzd_mon_coatl_ror_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_main_lzd_mon_stegadon_1",
+            "wh2_main_lzd_mon_ancient_stegadon",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1"
+        }
+    },
+    {
+        "wh2_dlc12_lzd_tiktaqto",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0",
+            "wh2_dlc17_lzd_mon_coatl_0",
+            "wh2_dlc17_lzd_mon_coatl_ror_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_mon_stegadon_0",
+            "wh2_main_lzd_mon_stegadon_1",
+            "wh2_main_lzd_mon_ancient_stegadon",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1"
+        }
+    },
+    {
+        "wh2_dlc17_lzd_oxyotl",
+        {
+            "wh2_main_lzd_inf_chameleon_skinks_0",
+            "wh2_main_lzd_inf_chameleon_skinks_blessed_0",
+            "wh2_dlc17_lzd_inf_chameleon_stalkers_0",
+            "wh2_dlc17_lzd_mon_coatl_0",
+            "wh2_dlc17_lzd_mon_coatl_ror_0",
+            "wh2_dlc17_lzd_mon_troglodon_0",
+            "wh2_dlc17_lzd_mon_troglodon_ror_0",
+            "wh2_main_lzd_cav_terradon_riders_0",
+            "wh2_main_lzd_cav_terradon_riders_1",
+            "wh2_dlc12_lzd_cav_ripperdactyl_riders_0"
+        }
+    },
+    {
+        "wh2_main_lzd_kroq_gar",
+        {
+            "wh2_main_lzd_cav_cold_ones_1",
+            "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0",
+            "wh2_main_lzd_inf_saurus_spearmen_0",
+            "wh2_main_lzd_inf_saurus_spearmen_1",
+            "wh2_main_lzd_inf_saurus_spearmen_blessed_1"
+        }
+    },
+    {
+        "wh2_main_lzd_lord_mazdamundi",
+        {
+            "wh2_dlc12_lzd_mon_salamander_pack_0",
+            "wh2_dlc12_lzd_mon_salamander_pack_ror_0",
+            "wh2_dlc12_lzd_mon_ancient_stegadon_1",
+            "wh2_main_lzd_mon_bastiladon_2",
+            "wh2_main_lzd_mon_bastiladon_1",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_temple_guards",
+            "wh2_main_lzd_inf_temple_guards_blessed",
+            "wh2_dlc12_lzd_inf_temple_guards_ror_0"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_gor_rok",
+        {
+            "wh2_dlc13_lzd_mon_razordon_pack_0",
+            "wh2_dlc13_lzd_mon_razordon_pack_ror_0",
+            "wh2_main_lzd_cav_cold_ones_1",
+            "wh2_main_lzd_cav_cold_one_spearriders_blessed_0",
+            "wh2_main_lzd_cav_horned_ones_0",
+            "wh2_main_lzd_cav_horned_ones_blessed_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_inf_saurus_spearmen_0",
+            "wh2_main_lzd_inf_saurus_spearmen_1",
+            "wh2_main_lzd_inf_saurus_spearmen_blessed_1"
+        }
+    },
+    {
+        "wh2_dlc13_lzd_nakai",
+        {
+            "wh2_main_lzd_mon_kroxigors",
+            "wh2_main_lzd_mon_kroxigors_blessed",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_0",
+            "wh2_dlc13_lzd_mon_sacred_kroxigors_ror_0",
+            "wh2_main_lzd_inf_saurus_warriors_blessed_1",
+            "wh2_main_lzd_inf_saurus_warriors_0",
+            "wh2_main_lzd_inf_saurus_warriors_1",
+            "wh2_main_lzd_mon_carnosaur_0",
+            "wh2_main_lzd_mon_carnosaur_blessed_0wh2_dlc17_lzd_mon_carnosaur_ror_0"
+        }
+    }
+}
+
+local hElf1PointRareUnits = {
+    ["wh2_main_hef_inf_lothern_sea_guard_0"] = 1,
+    ["wh2_main_hef_inf_lothern_sea_guard_1"] = 1,
+    ["wh2_main_hef_inf_white_lions_of_chrace_0"] = 1,
+    ["wh2_dlc10_hef_inf_shadow_warriors_0"] = 1,
+    ["wh2_dlc15_hef_inf_silverin_guard_0"] = 1,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_0"] = 1,
+    ["wh2_dlc15_hef_inf_mistwalkers_faithbearers_0"] = 1,
+    ["wh2_dlc15_hef_inf_mistwalkers_sentinels_0"] = 1,
+    ["wh2_dlc15_hef_inf_mistwalkers_skyhawks_0"] = 1,
+    ["wh2_dlc15_hef_inf_mistwalkers_spireguard_0"] = 1,
+    ["wh2_dlc10_hef_inf_the_storm_riders_ror_0"] = 1,
+    ["wh2_dlc10_hef_inf_the_silverpelts_ror_0"] = 1,
+    ["wh2_dlc10_hef_inf_the_grey_ror_0"] = 1,
+    ["wh2_dlc10_hef_cav_the_heralds_of_the_wind_ror_0"] = 1,
+    ["wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0"] = 1,
+    ["wh2_dlc10_hef_inf_everqueens_court_guards_ror_0"] = 1
+}
+local hElf3PointRareUnits = {
+    ["wh2_main_hef_mon_moon_dragon"] = 3,
+    ["wh2_main_hef_mon_phoenix_flamespyre"] = 3,
+    ["wh2_main_hef_mon_phoenix_frostheart"] = 3,
+    ["wh2_main_hef_mon_star_dragon"] = 3,
+    ["wh2_main_hef_mon_sun_dragon"] = 3,
+    ["wh2_dlc15_hef_mon_arcane_phoenix_0"] = 3,
+    ["wh2_dlc10_hef_mon_treeman_0"] = 3,
+    ["wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"] = 3,
+    ["wh2_dlc15_hef_mon_forest_dragon_imrik"] = 3,
+    ["wh2_dlc15_hef_mon_moon_dragon_imrik"] = 3,
+    ["wh2_dlc15_hef_mon_star_dragon_imrik"] = 3,
+    ["wh2_dlc15_hef_mon_arcane_phoenix_ror_0"] = 3
+}
+local hElfSpecialRulesArray = {
+    {
+        "wh2_dlc10_hef_alarielle",
+        {
+            "wh2_dlc10_hef_mon_treekin_0",
+            "wh2_dlc10_hef_mon_treeman_0",
+            "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+            "wh2_dlc10_hef_inf_everqueens_court_guards_ror_0",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_dlc15_hef_mon_arcane_phoenix_0",
+            "wh2_dlc15_hef_mon_arcane_phoenix_ror_0"
+        }
+    },
+    {
+        "wh2_dlc10_hef_alith_anar",
+        {
+            "wh2_dlc10_hef_inf_shadow_walkers_0",
+            "wh2_dlc10_hef_inf_shadow_warriors_0",
+            "wh2_dlc10_hef_inf_the_grey_ror_0",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_main_hef_mon_moon_dragon"
+        }
+    },
+    {
+        "wh2_dlc15_hef_eltharion",
+        {
+            "wh2_dlc15_hef_inf_silverin_guard_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_dlc15_hef_inf_mistwalkers_faithbearers_0",
+            "wh2_dlc15_hef_inf_mistwalkers_sentinels_0",
+            "wh2_dlc15_hef_inf_mistwalkers_skyhawks_0",
+            "wh2_dlc15_hef_inf_mistwalkers_spireguard_0",
+            "wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0"
+        }
+    },
+    {
+        "wh2_dlc15_hef_imrik",
+        {
+            "wh2_main_hef_cav_dragon_princes",
+            "wh2_dlc10_hef_cav_the_fireborn_ror_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_inf_lothern_sea_guard_0",
+            "wh2_main_hef_inf_lothern_sea_guard_1",
+            "wh2_main_hef_mon_sun_dragon",
+            "wh2_dlc15_hef_mon_black_dragon_imrik",
+            "wh2_dlc15_hef_mon_forest_dragon_imrik",
+            "wh2_dlc15_hef_mon_moon_dragon_imrik",
+            "wh2_dlc15_hef_mon_star_dragon_imrik",
+            "wh2_dlc15_hef_mon_sun_dragon_imrik"
+        }
+    },
+    {
+        "wh2_main_hef_prince_alastar",
+        {
+            "wh2_main_hef_inf_white_lions_of_chrace_0",
+            "wh2_dlc10_hef_inf_the_silverpelts_ror_0",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+            "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+            "wh2_dlc15_hef_mon_war_lions_of_chrace_ror_0"
+        }
+    },
+    {
+        "wh2_main_hef_teclis",
+        {
+            "wh2_dlc10_hef_cav_the_heralds_of_the_wind_ror_0",
+            "wh2_main_hef_cav_ithilmar_chariot",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+            "wh2_dlc15_hef_mon_arcane_phoenix_0",
+            "wh2_dlc15_hef_mon_arcane_phoenix_ror_0"
+        }
+    },
+    {
+        "wh2_main_hef_tyrion",
+        {
+            "wh2_main_hef_inf_lothern_sea_guard_0",
+            "wh2_main_hef_inf_lothern_sea_guard_1",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_cav_ithilmar_chariot",
+            "wh2_main_hef_cav_dragon_princes",
+            "wh2_dlc10_hef_inf_keepers_of_the_flame_ror_0",
+            "wh2_main_hef_inf_phoenix_guard"
+        }
+    },
+    {
+        "wh2_main_hef_princess",
+        {
+            "wh2_main_hef_inf_lothern_sea_guard_0",
+            "wh2_main_hef_inf_lothern_sea_guard_1",
+            "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+            "wh2_dlc10_hef_inf_shadow_warriors_0",
+            "wh2_main_hef_cav_tiranoc_chariot",
+            "wh2_main_hef_art_eagle_claw_bolt_thrower"
+        }
+    },
+    {
+        "wh2_main_hef_prince",
+        {
+            "wh2_main_hef_inf_white_lions_of_chrace_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_inf_phoenix_guard",
+            "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+            "wh2_main_hef_cav_dragon_princes"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_beasts",
+        {
+            "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+            "wh2_main_hef_inf_white_lions_of_chrace_0",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_main_hef_mon_phoenix_flamespyre",
+            "wh2_main_hef_mon_sun_dragon"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_death",
+        {
+            "wh2_dlc10_hef_inf_shadow_warriors_0",
+            "wh2_main_hef_cav_tiranoc_chariot",
+            "wh2_main_hef_art_eagle_claw_bolt_thrower",
+            "wh2_main_hef_inf_swordmasters_of_hoeth_0",
+            "wh2_main_hef_mon_moon_dragon"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_fire",
+        {
+            "wh2_main_hef_inf_phoenix_guard",
+            "wh2_main_hef_inf_white_lions_of_chrace_0",
+            "wh2_main_hef_cav_dragon_princes",
+            "wh2_main_hef_mon_phoenix_flamespyre",
+            "wh2_main_hef_mon_sun_dragon"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_heavens",
+        {
+            "wh2_dlc15_hef_inf_silverin_guard_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_main_hef_mon_sun_dragon",
+            "wh2_main_hef_mon_moon_dragon"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_high",
+        {
+            "wh2_dlc15_hef_inf_silverin_guard_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_cav_dragon_princes",
+            "wh2_dlc10_hef_inf_sisters_of_avelorn_0",
+            "wh2_main_hef_mon_phoenix_frostheart"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_life",
+        {
+            "wh2_dlc15_hef_mon_war_lions_of_chrace_0",
+            "wh2_main_hef_inf_white_lions_of_chrace_0",
+            "wh2_main_hef_mon_great_eagle",
+            "wh2_dlc15_hef_mon_arcane_phoenix_0",
+            "wh2_main_hef_cav_dragon_princes"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_light",
+        {
+            "wh2_main_hef_inf_lothern_sea_guard_0",
+            "wh2_main_hef_inf_lothern_sea_guard_1",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_cav_ithilmar_chariot",
+            "wh2_dlc15_hef_inf_silverin_guard_0",
+            "wh2_main_hef_inf_swordmasters_of_hoeth_0"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_metal",
+        {
+            "wh2_main_hef_cav_ithilmar_chariot",
+            "wh2_main_hef_cav_tiranoc_chariot",
+            "wh2_dlc15_hef_veh_lion_chariot_of_chrace_0",
+            "wh2_main_hef_inf_phoenix_guard",
+            "wh2_main_hef_art_eagle_claw_bolt_thrower"
+        }
+    },
+    {
+        "wh2_dlc15_hef_archmage_shadows",
+        {
+            "wh2_dlc10_hef_inf_shadow_warriors_0",
+            "wh2_main_hef_cav_silver_helms_0",
+            "wh2_main_hef_cav_silver_helms_1",
+            "wh2_main_hef_inf_lothern_sea_guard_0",
+            "wh2_main_hef_inf_lothern_sea_guard_1",
+            "wh2_main_hef_cav_tiranoc_chariot",
+            "wh2_main_hef_mon_moon_dragon"
+        }
+    }
+}
+
+local skv1PointRareUnits = {
+    ["wh2_main_skv_inf_death_runners_0"] = 1,
+    ["wh2_main_skv_inf_gutter_runner_slingers_0"] = 1,
+    ["wh2_main_skv_inf_gutter_runner_slingers_1"] = 1,
+    ["wh2_main_skv_inf_gutter_runners_0"] = 1,
+    ["wh2_main_skv_inf_gutter_runners_1"] = 1,
+    ["wh2_main_skv_inf_plague_monks"] = 1,
+    ["wh2_dlc16_skv_mon_wolf_rats_0"] = 1,
+    ["wh2_dlc16_skv_mon_wolf_rats_1"] = 1,
+    ["wh2_dlc16_skv_mon_wolf_rats_0_flesh_lab"] = 1,
+    ["wh2_dlc16_skv_mon_wolf_rats_1_flesh_lab"] = 1
+}
+local skv3PointRareUnits = {
+    ["wh2_main_skv_veh_doomwheel"] = 3,
+    ["wh2_main_skv_mon_hell_pit_abomination"] = 3,
+    ["wh2_dlc16_skv_mon_hell_pit_abomination_flesh_lab"] = 3,
+    ["wh2_dlc16_skv_mon_rat_ogre_mutant_ror_0"] = 3,
+    ["wh2_dlc12_skv_veh_doomwheel_ror_0"] = 3,
+    ["wh2_dlc16_skv_mon_hell_pit_abomination_ror_0"] = 3,
+    ["wh2_dlc16_skv_mon_rat_ogre_mutant"] = 3
+}
+
+local skvSpecialRulesArray = {
+    {
+        "wh2_main_skv_warlord",
+        {
+            "wh2_main_skv_inf_stormvermin_0",
+            "wh2_main_skv_inf_stormvermin_1",
+            "wh2_dlc12_skv_inf_ratling_gun_0",
+            "wh2_main_skv_art_plagueclaw_catapult",
+            "wh2_main_skv_mon_rat_ogres"
+        }
+    },
+    {
+        "wh2_dlc12_skv_warlock_master",
+        {
+            "wh2_dlc12_skv_inf_warplock_jezzails_0",
+            "wh2_dlc12_skv_inf_ratling_gun_0",
+            "wh2_main_skv_inf_warpfire_thrower",
+            "wh2_main_skv_veh_doomwheel",
+            "wh2_dlc12_skv_veh_doom_flayer_0",
+            "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+            "wh2_main_skv_art_warp_lightning_cannon"
+        }
+    },
+    {
+        "wh2_dlc14_skv_master_assassin",
+        {
+            "wh2_dlc14_skv_inf_eshin_triads_0",
+            "wh2_main_skv_inf_gutter_runners_0",
+            "wh2_main_skv_inf_gutter_runners_1",
+            "wh2_dlc14_skv_inf_warp_grinder_0",
+            "wh2_main_skv_inf_gutter_runner_slingers_0",
+            "wh2_main_skv_inf_gutter_runner_slingers_1",
+            "wh2_main_skv_inf_death_runners_0"
+        }
+    },
+    {
+        "wh2_main_skv_grey_seer_plague",
+        {
+            "wh2_main_skv_inf_death_globe_bombardiers",
+            "wh2_main_skv_art_plagueclaw_catapult",
+            "wh2_main_skv_inf_plague_monks",
+            "wh2_main_skv_inf_plague_monk_censer_bearer",
+            "wh2_main_skv_inf_poison_wind_globadiers"
+        }
+    },
+    {
+        "wh2_main_skv_grey_seer_ruin",
+        {
+            "wh2_dlc16_skv_mon_wolf_rats_0",
+            "wh2_dlc16_skv_mon_wolf_rats_1",
+            "wh2_dlc16_skv_mon_brood_horror_0",
+            "wh2_main_skv_mon_rat_ogres",
+            "wh2_dlc16_skv_mon_rat_ogre_mutant",
+            "wh2_main_skv_mon_hell_pit_abomination"
+        }
+    },
+    {
+        "wh2_dlc09_skv_tretch_craventail",
+        {
+            "wh2_main_skv_inf_gutter_runners_0",
+            "wh2_main_skv_inf_gutter_runners_1",
+            "wh2_dlc16_skv_mon_wolf_rats_0",
+            "wh2_dlc16_skv_mon_wolf_rats_1",
+            "wh2_main_skv_inf_death_runners_0",
+            "wh2_dlc14_skv_inf_death_runners_ror_0",
+            "wh2_dlc12_skv_veh_doom_flayer_ror_0",
+            "wh2_dlc12_skv_veh_doom_flayer_0"
+        }
+    },
+    {
+        "wh2_dlc12_skv_ikit_claw",
+        {
+            "wh2_dlc12_skv_inf_warplock_jezzails_0",
+            "wh2_dlc12_skv_inf_ratling_gun_0",
+            "wh2_main_skv_inf_warpfire_thrower",
+            "wh2_dlc12_skv_inf_warplock_jezzails_ror_0",
+            "wh2_dlc12_skv_inf_ratling_gun_ror_0",
+            "wh2_dlc12_skv_art_warplock_jezzails_ror_tech_lab_0",
+            "wh2_dlc12_skv_inf_ratling_gun_ror_tech_lab_0",
+            "wh2_dlc12_skv_inf_warpfire_thrower_ror_tech_lab_0",
+            "wh2_main_skv_veh_doomwheel",
+            "wh2_dlc12_skv_veh_doomwheel_ror_0",
+            "wh2_dlc12_skv_veh_doomwheel_ror_tech_lab_0",
+            "wh2_dlc12_skv_veh_doom_flayer_ror_0",
+            "wh2_dlc12_skv_veh_doom_flayer_0",
+            "wh2_dlc12_skv_veh_doom_flayer_ror_tech_lab_0",
+            "wh2_dlc14_skv_inf_poison_wind_mortar_0",
+            "wh2_dlc14_skv_inf_poison_wind_mortar_ror_0",
+            "wh2_main_skv_art_warp_lightning_cannon",
+            "wh2_dlc12_skv_art_warp_lightning_cannon_ror_0"
+        }
+    },
+    {
+        "wh2_dlc14_skv_deathmaster_snikch",
+        {
+            "wh2_dlc14_skv_inf_eshin_triads_0",
+            "wh2_dlc14_skv_inf_eshin_triads_ror_0",
+            "wh2_main_skv_inf_gutter_runners_0",
+            "wh2_main_skv_inf_gutter_runners_1",
+            "wh2_dlc14_skv_inf_warp_grinder_0",
+            "wh2_main_skv_inf_gutter_runner_slingers_0",
+            "wh2_main_skv_inf_gutter_runner_slingers_1",
+            "wh2_main_skv_inf_death_runners_0"
+        }
+    },
+    {
+        "wh2_dlc16_skv_throt_the_unclean",
+        {
+            "wh2_dlc16_skv_mon_wolf_rats_0",
+            "wh2_dlc16_skv_mon_wolf_rats_1",
+            "wh2_dlc16_skv_mon_wolf_rats_1_flesh_lab",
+            "wh2_dlc16_skv_mon_wolf_rats_0_flesh_lab",
+            "wh2_dlc16_skv_mon_brood_horror_0",
+            "wh2_dlc16_skv_mon_brood_horror_0_flesh_lab",
+            "wh2_main_skv_mon_rat_ogres",
+            "wh2_dlc16_skv_mon_rat_ogres_ror_0",
+            "wh2_dlc16_skv_mon_rat_ogres_flesh_lab",
+            "wh2_dlc16_skv_mon_rat_ogre_mutant",
+            "wh2_dlc16_skv_mon_rat_ogre_mutant_ror_0",
+            "wh2_dlc16_skv_mon_rat_ogre_mutant_flesh_lab",
+            "wh2_main_skv_mon_hell_pit_abomination",
+            "wh2_dlc16_skv_mon_hell_pit_abomination_ror_0",
+            "wh2_dlc16_skv_mon_hell_pit_abomination_flesh_lab"
+        }
+    },
+    {
+        "wh2_main_skv_lord_skrolk",
+        {
+            "wh2_main_skv_inf_death_globe_bombardiers",
+            "wh2_main_skv_art_plagueclaw_catapult",
+            "wh2_main_skv_inf_plague_monks",
+            "wh2_main_skv_inf_plague_monk_censer_bearer",
+            "wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror_0",
+            "wh2_main_skv_inf_poison_wind_globadiers"
+        }
+    },
+    {
+        "wh2_main_skv_queek_headtaker",
+        {
+            "wh2_main_skv_inf_stormvermin_0",
+            "wh2_dlc12_skv_inf_stormvermin_ror_0",
+            "wh2_main_skv_inf_stormvermin_1",
+            "wh2_dlc12_skv_inf_ratling_gun_0",
+            "wh2_main_skv_art_plagueclaw_catapult",
+            "wh2_main_skv_mon_rat_ogres"
+        }
+    }
+}
+
+
 
 local unit_text_overrides = {
     ["wh2_main_lzd_mon_kroxigors_nakai"]  = {
@@ -1018,11 +2008,6 @@ rm:add_loaned_units_in_table(loaned_units)
 
             
 rm:add_post_setup_callback(function()
-    --this gives skrolk core plague monks
-    rm:create_unit_override("wh2_main_skv_inf_plague_monks", "core_plague_monks")
-    rm:add_subtype_filter_for_unit_override("wh2_main_skv_lord_skrolk", "core_plague_monks")
-    rm:set_ui_profile_for_unit_override("core_plague_monks", "[[col:yellow]]Special Rule: [[/col]] Lord Skrolk can recruit Plague Monks as Core units in his armies. \n Armies may have an unlimited number of Core Units.", "ui/custom/recruitment_controls/common_units.png")
-    rm:log("Added Skrolk Special Rule")
 
     for i = 1, #dElfSpecialRulesArray do
         local lordName = dElfSpecialRulesArray[i][1]
@@ -1033,6 +2018,45 @@ rm:add_post_setup_callback(function()
             if dElf3PointRareUnits[unitType] == 3 then unitWeight = 3 end
             local ruleName = lordName.."-"..unitType
             rm:create_unit_override(unitType, ruleName, "def_special", unitWeight)
+            rm:add_subtype_filter_for_unit_override(lordName, ruleName)
+            rm:log("Added Special Rule "..ruleName)
+        end
+    end
+    for i = 1, #lizManSpecialRulesArray do
+        local lordName = lizManSpecialRulesArray[i][1]
+        for j = 1, #lizManSpecialRulesArray[i][2] do
+            local unitType = lizManSpecialRulesArray[i][2][j]
+            local unitWeight = 2
+            if lizMan1PointRareUnits[unitType] == 1 then unitWeight = 1 end
+            if lizMan3PointRareUnits[unitType] == 3 then unitWeight = 3 end
+            local ruleName = lordName.."-"..unitType
+            rm:create_unit_override(unitType, ruleName, "lzd_special", unitWeight)
+            rm:add_subtype_filter_for_unit_override(lordName, ruleName)
+            rm:log("Added Special Rule "..ruleName)
+        end
+    end
+    for i = 1, #hElfSpecialRulesArray do
+        local lordName = hElfSpecialRulesArray[i][1]
+        for j = 1, #hElfSpecialRulesArray[i][2] do
+            local unitType = hElfSpecialRulesArray[i][2][j]
+            local unitWeight = 2
+            if hElf1PointRareUnits[unitType] == 1 then unitWeight = 1 end
+            if hElf3PointRareUnits[unitType] == 3 then unitWeight = 3 end
+            local ruleName = lordName.."-"..unitType
+            rm:create_unit_override(unitType, ruleName, "hef_special", unitWeight)
+            rm:add_subtype_filter_for_unit_override(lordName, ruleName)
+            rm:log("Added Special Rule "..ruleName)
+        end
+    end
+    for i = 1, #skvSpecialRulesArray do
+        local lordName = skvSpecialRulesArray[i][1]
+        for j = 1, #skvSpecialRulesArray[i][2] do
+            local unitType = skvSpecialRulesArray[i][2][j]
+            local unitWeight = 2
+            if skv1PointRareUnits[unitType] == 1 then unitWeight = 1 end
+            if skv3PointRareUnits[unitType] == 3 then unitWeight = 3 end
+            local ruleName = lordName.."-"..unitType
+            rm:create_unit_override(unitType, ruleName, "skv_special", unitWeight)
             rm:add_subtype_filter_for_unit_override(lordName, ruleName)
             rm:log("Added Special Rule "..ruleName)
         end
